@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preload" href="assets/1amwu.gif" as="image">
+    <link rel="icon" href="assets/logo.webp" type="image/x-icon" loading="lazy">
+    <style>
+        .preloader {
+            overflow-x: hidden;
+            background: #212121 url(assets/1amwu.gif) no-repeat center center;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
+        }
+
+        #myVideo {
+            z-index: 10;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display:none;
+        }
+
+        section {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader">
+
+    </div>
+    <!-- Home -->
+    <video id="myVideo" width="250" height="230" autoplay loop>
+        <source src="./assets/avt.webm" type="video/mp4">
+    </video>
+    <section class="home">
+        <div class="home-div">
+            <div class="home-left">
+                <div data-aos="fade-right">
+                    <img src="assets/sign.webp" alt="sign" class="sign">
+                </div>
+                <div class="profile-div">
+                    <a href="#contact">
+                        <div class="thecard" data-aos="zoom-in">
+                            <div class="front">
+                                <img src="assets/profile.webp" alt="" class="profile-img">
+                            </div>
+                            <div class="back">
+                                <h1>Hire Me</h1>
+                                <ion-icon name="arrow-forward-outline" class="back-icon"></ion-icon>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/subhadip-dutta-226b2021a/" target="_blank" class="social-links"
+                        data-aos="fade-right" data-aos-offset="10"><img src="assets/linkedin.webp" alt=""
+                            class="social-img"></a>
+                    <a href="https://github.com/Subha9932" target="_blank" class="social-links"><img
+                            src="assets/github.webp" alt="" class="social-img" data-aos="fade-right"
+                            data-aos-offset="20"></a>
+                    <a href="https://twitter.com/subh83760" target="_blank" class="social-links"><img
+                            src="assets/twitter.webp" alt="" class="social-img" data-aos="fade-right"
+                            data-aos-offset="30"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-links"><img
+                            src="assets/youtube.webp" alt="" class="social-img" data-aos="fade-right"
+                            data-aos-offset="40"></a>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="right-content">
+                    <div data-aos="fade-left">
+                        <h2 class="post">Web Developer</h2>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h1 class="name">Subhadip Dutta</h1>
+                    </div>
+                    <div class="desc" data-aos="fade-left">
+                        There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds.
+                        The deep green that isn't the color of clouds, but came with these. He knew what was coming and
+                        he hoped he was prepared.
+                    </div>
+                    <div class="cv-btn">
+                        <a href="./assets/Cvsubha.pdf" download="Cvsubha.pdf" data-aos="fade-up">
+                            <button type="submit" class="btn cv-button">Download CV</button>
+                        </a>
+                        <a href="#contact" data-aos="fade-up">
+                            <button type="submit" class="btn">
+                                Contact
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <label for="baseColorInput">Base Color:</label>
+            <input type="color" id="baseColorInput">
+            <button onclick="generateShades()">Generate Shades</button> -->
+            <button id="changemode" data-aos="fade-left">
+                <ion-icon name="moon-outline"></ion-icon>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="lines">
+        <div class="dots">
+        </div>
+        <div class="dots">
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Who I Am -->
+    <section>
+        <div class="about">
+            <div class="about-left" data-aos="fade-right">
+                <h1 class="about-head">
+                    Who I am
+                </h1>
+                <br>
+                <div class="about-content">
+                    My name's Subhadip Dutta. I'm a Full Stack Developer based in West-Bengal,India.
+                    <br><br><br>
+                    I am a unique individual, navigating through life's twists and turns with kindness and
+                    compassion. I strive to spread joy and embrace every challenge, learning and growing from my
+                    mistakes. Confident in who I am, I am proud to be me and say it loud.
+                </div>
+            </div>
+            <div class="about-right" data-aos="fade-left">
+                <img src="assets/about.webp" alt="" class="about-illu">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="lines">
+        <div class="dots">
+        </div>
+        <div class="dots">
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <!-- Education -->
+    <section>
+        <div class="about education">
+            <div class="about-right">
+                <img src="assets/edu-illu.svg" alt="" class="about-illu">
+            </div>
+            <div class="about-left">
+                <h1 class="about-head">
+                    Education
+                </h1>
+                <br>
+                <div class="edu-cards">
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/scholar.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2013-2019</h3>
+                            <h2 class="edu-head">Secondary Education</h2>
+                            <h2 class="edu-subhead">Asansol Ram Krishna Mission</h2>
+                        </div>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/scholar.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2019-2021</h3>
+                            <h2 class="edu-head">Intermediate</h2>
+                            <h2 class="edu-subhead">Baranagar Ram Krishna Mission</h2>
+                        </div>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/scholar.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2021-Present</h3>
+                            <h2 class="edu-head">Bachelor Of Technology</h2>
+                            <h2 class="edu-subhead">Lovely Professional University</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <div class="skills">
+            <h1 class="about-head skills">
+                SKILLS
+            </h1>
+            <div class="skill-cards">
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="30">
+                    <div class="skill-images">
+                        <img src="assets/html.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">HTML</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="60">
+                    <div class="skill-images">
+                        <img src="assets/css.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">CSS</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="90">
+                    <div class="skill-images">
+                        <img src="assets/javascript.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">JAVASCRIPT</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="120">
+                    <div class="skill-images">
+                        <img src="assets/nodejs.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">NODE JS</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="150">
+                    <div class="skill-images">
+                        <img src="assets/reactjs.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">React Js</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="180">
+                    <div class="skill-images">
+                        <img src="assets/mongodb.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">MongoDb</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="210">
+                    <div class="skill-images">
+                        <img src="assets/c.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">C++</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="240">
+                    <div class="skill-images">
+                        <img src="assets/express.png" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">Express Js</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="270">
+                    <div class="skill-images">
+                        <img src="assets/tailwind.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">Tailwind</h1>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-offset="300">
+                    <div class="skill-images">
+                        <img src="assets/wordpress.webp" alt="" class="skill-img">
+                    </div>
+                    <div>
+                        <h1 class="skill-name">Wordpress</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+        <div class="about education">
+            <div class="about-left">
+                <h1 class="about-head">
+                    Experience
+                </h1>
+                <br>
+                <div class="edu-cards">
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2023(JUN-JUL)</h3>
+                            <h2 class="edu-head">Frontend Developer</h2>
+                            <h2 class="edu-subhead">Board-Infinity</h2>
+                        </div>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2023(Nov-Dec)</h3>
+                            <h2 class="edu-head">Cloud-Computing</h2>
+                            <h2 class="edu-subhead">IBM</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <img src="assets/experience.svg" alt="" class="about-illu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <div class="projects">
+            <h1 class="about-head skills">
+                PROJECTS
+            </h1>
+            <div class="project-cards">
+                <div class="project-card" data-aos="fade-left" data-aos-offset="60">
+                    <div>
+                        <h1 class="project-head">Tech-Subh</h1>
+                    </div>
+                    <div class="project-images" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
+                        <img src="assets/texttoimgai.webp" alt="Text to Image AI" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://techsubha.netlify.app/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Subha9932/Tech-Subh" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            A personal technical website offering a comprehensive range of services in the field of computer science.
+                        </div>
+                        <div class="project-right">
+                            React <br> Node Js <br> CSS <br> Ffmpeg
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="120">
+                    <div>
+                        <h1 class="project-head">Tech-Snappy(User-Auth)</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/tutotube.webp" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://data-pgks.onrender.com/login" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Subha9932/Tech-Snappy" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            This Node.js project, titled Tech-Snappy, is designed to Validate a user auth. It leverages the power of Node.js to provide [specific functionality or features] for [target users or audience]. The primary focus of the project is to user authentication.
+                        </div>
+                        <div class="project-right">
+                            Node Js <br> CSS <br> Ffmpeg <br> Express-Js <br> Mongo DB
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="180">
+                    <div>
+                        <h1 class="project-head">Weather-Report-Generator</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/price.webp" alt="" class="project-img" >
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://techsubhweather.netlify.app/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Subha9932/Weather-Report" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Experience the power of real-time weather data with the Weather Report Generator. 
+                        </div>
+                        <div class="project-right">
+                            Anguler <br> Node Js <br> HTML <br> Type Script <br> Api
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="viewcard project-cards">
+                <div class="project-card" data-aos="fade-left" data-aos-offset="200">
+                    <div>
+                        <h1 class="project-head">Art`s Studio</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/confession.webp" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://ishikaarts.netlify.app/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Subha9932" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Art's Studio is a website created using React.js, showcasing the diverse and imaginative world of Telecas Artis creatures
+                        </div>
+                        <div class="project-right">
+                            React Js <br> Javascript <br> Bootstrap <br> Figma
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="250">
+                    <div>
+                        <h1 class="project-head">Traffic API</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/traffic.webp" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://traffic-company-api.onrender.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Shahil9728/Traffic-Company-API" target="_blank"
+                            class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            The website is a Node.js-based platform that utilizes the pin API from the Traffic Company
+                            to retrieve the pin and Login.
+                        </div>
+                        <div class="project-right">
+                            Javascript <br> Node Js
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="300">
+                    <div>
+                        <h1 class="project-head">Givestack</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/givestack.webp" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://givestack.onrender.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Shahil9728/Givestack" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            This website provides a secure login and registration system based on JWT (JSON Web Token)
+                            authentication.
+                        </div>
+                        <div class="project-right">
+                            MongoDb <br> Node Js <br> Bootstrap
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view-all">
+                <button class="btn view-btn" onclick="togglediv()">
+                    View All
+                    <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+        <div class="about achievements-div">
+            <div class="about-left">
+                <h1 class="about-head">
+                    Achievements
+                </h1>
+                <br>
+                <div class="about-content achievements">
+                    Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I
+                    have no data to support the quality of my work. If you have lots of relevant experience, the heading
+                    statement of your resume will be a summary.
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="edu-cards">
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2023</h3>
+                            <h2 class="edu-head">IBM</h2>
+                            <h2 class="edu-subhead">Cloud-Computing</h2>
+                        </div>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up">
+                        <div class="edu-images">
+                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3 class="edu-time">2024</h3>
+                            <h2 class="edu-head">Coding-Ninjas</h2>
+                            <h2 class="edu-subhead">1000+ Problem Solving</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Projects -->
+    <section>
+        <div class="projects">
+            <h1 class="about-head skills">
+                LIVE PROJECTS
+            </h1>
+            <div class="project-cards">
+                <div class="project-card" data-aos="fade-left" data-aos-offset="60">
+                    <div>
+                        <h1 class="project-head">SGPM</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/sgpm1.webp" style="border-radius: 10px;" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="http://sgpm.in/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Expert Packers and Movers for Seamless Relocations Nationwide.
+                        </div>
+                        <div class="project-right">
+                            Wordpress 
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="120">
+                    <div>
+                        <h1 class="project-head">Kitchen Story</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/kitchen.webp" style="border-radius: 10px;" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="http://kitchenstorytellers.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Savor culinary delights on our delectable restaurant website.
+                        </div>
+                        <div class="project-right">
+                            Wordpress <br> CSS
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="180">
+                    <div>
+                        <h1 class="project-head">HFFO</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/hffo2.webp" style="border-radius: 10px;" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="http://hffo.org/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Charity site, feeding and sheltering the needy with compassion.
+                        </div>
+                        <div class="project-right">
+                            Wordpress
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewcard1 project-cards">
+                <div class="project-card" data-aos="fade-left" data-aos-offset="200">
+                    <div>
+                        <h1 class="project-head">Tradingster.com</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/tradingster.webp" style="border-radius: 10px;" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://www.tradingster.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Stock prices, charts, and data for informed trading decisions. Visualize market trends effortlessly.
+                        </div>
+                        <div class="project-right">
+                            React Js <br> Express Js <br> Node Js
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="250">
+                    <div>
+                        <h1 class="project-head">Tailblaze</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/tailblaze.webp" style="border-radius: 10px;" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://tailblaze9.myshopify.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Affordable Dog Food Delivered to Your Doorstep!
+                            Password is - Sha@123456
+                        </div>
+                        <div class="project-right">
+                            Shopify
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-offset="300">
+                    <div>
+                        <h1 class="project-head">Web Portfolio</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/portfolio.webp" alt="" style="border-radius: 10px;" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://shahilkumar.netlify.app/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            Showcasing a web developer's projects, skills, and expertise through an interactive and dynamic showcase.
+                        </div>
+                        <div class="project-right">
+                            HTML <br> CSS <br> Javascript
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view-all">
+                <button class="btn view-btn" onclick="togglediv1()">
+                    View All
+                    <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section>
+        <div class="services  skills">
+            <h1 class="about-head">
+                SERVICES
+            </h1>
+            <h2 class="services-subhead">These are some of the services I offer. Reach out to me if I can help you with
+                any!</h2>
+            <div class="services-cards">
+                <div class="service-card" data-aos="fade-left" data-aos-offset="40">
+                    <ion-icon name="code-slash-outline" class="service-icon"></ion-icon>
+                    <h1 class="skill-name service">Web Design</h1>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-offset="80">
+                    <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+                    <h1 class="skill-name service">Photography</h1>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-offset="120">
+                    <ion-icon name="videocam-outline" class="service-icon"></ion-icon>
+                    <h1 class="skill-name service">Video Editing</h1>
+                </div>
+                <div class="service-card" data-aos="fade-left" data-aos-offset="160">
+                    <ion-icon name="create-outline" class="service-icon"></ion-icon>
+                    <h1 class="skill-name service">Logo Designing</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="testimonials">
+            <h1 class="about-head testimonials-head">
+                Testimonials
+            </h1>
+            <div class="testimonoal-slider">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="slide-container">
+                            <img src="assets/p1j.webp" alt="" class="slide-img">
+                            <div class="slide-cont">
+                                Subhadip Dutta's web development skills are exceptional! He created a stunning website for
+                                our company, exceeding our expectations.
+                            </div>
+                            <h2 class="edu-head">Ganesh Ghadigaonkar</h2>
+                            <h2 class="edu-subhead">Founder Of SGPM</h2>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-container">
+                            <img src="assets/p2j.webp" alt="" class="slide-img" >
+                            <div class="slide-cont">
+                                Our web developer's skills are exceptional! They built an intuitive and visually
+                                appealing website that perfectly represents our Charity.
+                            </div>
+                            <h2 class="edu-head">Mohd Majeed Bilal</h2>
+                            <h2 class="edu-subhead">Founder, HFFO</h2>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-container">
+                            <img src="assets/p3j.webp" alt="" class="slide-img">
+                            <div class="slide-cont">
+                                The web development expertise we received transformed our business. The website design
+                                is attracting more customers than ever before!
+                            </div>
+                            <h2 class="edu-head">Anjali Sharma</h2>
+                            <h2 class="edu-subhead">Owner, Boutique Bliss</h2>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-container">
+                            <img src="assets/p4j.webp" alt="" class="slide-img">
+                            <div class="slide-cont">
+                                Our professional web developer delivered a sleek and functional website that
+                                significantly boosted our online presence. :)
+                            </div>
+                            <h2 class="edu-head">John Thompson</h2>
+                            <h2 class="edu-subhead">CEO, Thompson Solutions</h2>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-container">
+                            <img src="assets/p5j.webp" alt="" class="slide-img">
+                            <div class="slide-cont">
+                                The web development skills we witnessed were outstanding. Our new website is
+                                user-friendly and visually captivating, attracting more clients to our business!
+                            </div>
+                            <h2 class="edu-head">Maria Sanchez</h2>
+                            <h2 class="edu-subhead">Marketing Director, Global Tech Solutions</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contact">
+        <div class="contacts skills">
+            <h1 class="about-head cont-head">
+                Contacts
+            </h1>
+            <div class="cont-body">
+                <div class="cont-form">
+                    <form action="contact" class="cont" method="post" netlify>
+                        <div class="input-container" data-aos="fade-right" data-aos-offset="30">
+                            <label for="" class="input-label">
+                                Name
+                            </label>
+                            <input type="text" name="name" id="" class="cont-input" placeholder="Enter your name">
+                        </div>
+                        <div class="input-container" data-aos="fade-right" data-aos-offset="60">
+                            <label for="" class="input-label">
+                                Email
+                            </label>
+                            <input type="text" name="eamil" id="" class="cont-input" placeholder="Enter your email">
+                        </div>
+                        <div class="input-container" data-aos="fade-right" data-aos-offset="90">
+                            <label for="" class="input-label">
+                                Message
+                            </label>
+                            <textarea name="message" id="" cols="30" rows="10" class="cont-input message"
+                                placeholder="Enter your message here....."></textarea>
+                        </div>
+                        <div class="send-btn-div" data-aos="fade-right" data-aos-offset="120">
+                            <button class="send-btn" type="submit">
+                                Send
+                                <ion-icon name="send-outline" class="send-icon"></ion-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cont-social" data-aos="fade-up">
+                    <div class="social-div" data-aos="fade-up" data-aos-offset="30">
+                        <a href="mailto:bossubhadip19@gmail.com">
+                            <ion-icon name="at-outline" class="cont-icon"></ion-icon>
+                        </a>
+                        <h1 class="social-subhead mail">bossubhadip19@gmail.com</h1>
+                    </div>
+                    <div class="social-div" data-aos="fade-up" data-aos-offset="60">
+                        <a href="tel:+919932876978">
+                            <ion-icon name="call-outline" class="cont-icon"></ion-icon>
+                        </a>
+                        <h1 class="social-subhead">+91 9932876978</h1>
+                    </div>
+                    <div class="social-div" data-aos="fade-up" data-aos-offset="90">
+                        <a href="https://www.google.co.in/maps/place/Hura,+West+Bengal/@23.3028434,86.6466808,15z/data=!3m1!4b1!4m6!3m5!1s0x39f65f2a40428179:0xc2173434f2fe61ea!8m2!3d23.3058557!4d86.6529222!16s%2Fg%2F11cs4chp30?entry=ttu"
+                            target="_blank">
+                            <ion-icon name="location-outline" class="cont-icon"></ion-icon>
+                        </a>
+                        <h1 class="social-subhead">Puruliya,West-Bengal</h1>
+                    </div>
+                    <div class="social-div social-icon" style="margin-top:3rem;">
+                        <a href="https://www.instagram.com/adolf_critler_subh_?igsh=MWVhbm05b3lwcXVxYQ==" target="_blank" data-aos="fade-right"
+                            data-aos-offset="30">
+                            <ion-icon name="logo-instagram" class="cont-icon"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/subhadip-dutta-226b2021a/" target="_blank"
+                            data-aos="fade-right" data-aos-offset="60">
+                            <ion-icon name="logo-linkedin" class="cont-icon"></ion-icon>
+                        </a>
+                        <a href="https://github.com/Shahil9728" target="_blank" data-aos="fade-right"
+                            data-aos-offset="90">
+                            <ion-icon name="logo-github" class="cont-icon"></ion-icon>
+                        </a>
+                        <a href="https://twitter.com/subh83760" target="_blank" data-aos="fade-right"
+                            data-aos-offset="120">
+                            <ion-icon name="logo-twitter" class="cont-icon"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="" data-aos="fade-left">
+                    <img src="assets/cont.svg" alt="" class="cont-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1 style="text-align: center;font-weight: 400;" data-aos="zoom-in" data-aos-offset="0">Made with <ion-icon
+                name="heart" style="color:var(--primary-color)" data-aos="zoom-in" data-aos-offset="0"></ion-icon> by
+            Subhadip Dutta</h1>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script>
+
+        function togglediv() {
+            const viewcards = document.querySelector('.viewcard');
+            const viewbtn = document.querySelector('.view-icon');
+            const computedStyle = window.getComputedStyle(viewcards);
+            if (computedStyle.display === "none") {
+                viewcards.style.display = "grid";
+                viewbtn.style.transform = "translateX(10px) rotate(-90deg)";
+            } else {
+                viewcards.style.display = "none";
+                viewbtn.style.transform = "translateX(10px) rotate(0deg)";
+            }
+        }
+
+        function togglediv1() {
+            const viewcards = document.querySelector('.viewcard1');
+            const viewbtn = document.querySelector('.view-icon');
+            const computedStyle = window.getComputedStyle(viewcards);
+            if (computedStyle.display === "none") {
+                viewcards.style.display = "grid";
+                viewbtn.style.transform = "translateX(10px) rotate(-90deg)";
+            } else {
+                viewcards.style.display = "none";
+                viewbtn.style.transform = "translateX(10px) rotate(0deg)";
+            }
+        }
+        var loader = document.querySelector('.preloader');
+        window.addEventListener('load', function () {
+            loader.style.display = 'none';
+        })
+        var count = 0;
+        if (localStorage.getItem('count')) {
+            count = parseInt(localStorage.getItem('count'));
+        }
+        count++;
+        localStorage.setItem('count', count);
+        console.log("Numbe rof views are - " + count);
+
+        var button = document.getElementById('changemode');
+        const icon = button.querySelector('ion-icon');
+        var isPrimaryColors = true;
+
+        var root = document.documentElement;
+        button.addEventListener('click', function () {
+
+            if (isPrimaryColors) {
+                icon.setAttribute('name', 'sunny-outline');
+                root.style.setProperty('--primary-color', 'rgb(100, 200, 150)');
+                root.style.setProperty('--second-color', '#DDA65Bff');
+                root.style.setProperty('--text-color', 'black');
+                root.style.setProperty('--background-color', '#f7f7f7');
+                root.style.setProperty('--text-second', '#000000');
+                root.style.setProperty('--edu-card-color', '#559b78c9');
+                root.style.setProperty('--edu-card-hover', '#468c69');
+                root.style.setProperty('--project-card', '#64c896');
+            } else {
+                icon.setAttribute('name', 'moon-outline');
+                root.style.setProperty('--primary-color', 'rgb(245, 101, 57)');
+                root.style.setProperty('--second-color', '#DDA65Bff');
+                root.style.setProperty('--text-color', 'white');
+                root.style.setProperty('--background-color', 'rgb(33, 33, 33)');
+                root.style.setProperty('--text-second', 'rgba(234, 234, 234, 0.8)');
+                root.style.setProperty('--edu-card-color', '#f565394d');
+                root.style.setProperty('--edu-card-hover', '#fa450e92');
+                root.style.setProperty('--project-card', 'rgb(255, 118, 77)');
+            }
+
+            isPrimaryColors = !isPrimaryColors;
+        });
+
+        window.onload = function () {
+            var video = document.getElementById("myVideo");
+
+            window.addEventListener('scroll', function () {
+                var scrollPosition = window.scrollY;
+                var webpageLength = document.documentElement.scrollHeight;
+                var videoDuration = video.duration;
+
+                if (webpageLength > videoDuration) {
+                    var maxScroll = webpageLength - window.innerHeight;
+                    var videoTime = (scrollPosition / maxScroll) * videoDuration;
+                    video.currentTime = videoTime;
+                }
+            });
+        };
+
+        <!-- our aos data -->
+        AOS.init({
+            offset: 100,
+            duration: 700
+        });
+    </script>
+</body>
+
+</html>
